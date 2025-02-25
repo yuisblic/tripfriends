@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- namespace = .java 와 .xml을 연결 -->
+<mapper namespace="kr.bit.mapper.BoardMapper">
+	
+	<sql id="search">
+		<if test="type=='writer'">
+			and userId like concat('%',#{keyword},'%')
+		</if>
+		<if test="type=='title'">
+			and title like concat('%',#{keyword},'%')
+		</if>
+		<if test="type=='content'">
+			and content like concat('%',#{keyword},'%')
+		</if>
+	</sql>
+	
+	<insert id="register" parameterType="kr.bit.entity.Board">
+		insert into board_tbl (categori, userId, title, content)
+		values(#{categori}, #{userId}, #{title}, #{content})
+	</insert>
+	
+	<select id="loadBest" resultType="kr.bit.entity.Board">
+		select * 
+		from (
+		    select *, @rank := @rank + 1 AS rank
+		    from board_tbl, (SELECT @rank := 0) AS r
+		    where YEARWEEK(indate, 1) = YEARWEEK(NOW(), 1)
+		    and wish >= 5
+		    order by wish desc
+		) AS ranked_boards
+    	where rank &lt;= 10
+		order by rank
+	</select>
+	
+	<select id="loadCate" resultType="kr.bit.entity.Board" parameterType="kr.bit.entity.Criteria">
+		select * from board_tbl where categori=#{cate}
+			<include refid="search"/>
+		order by indate desc
+        limit #{pageStart}, #{perPageNum}
+	</select>
+	
+	<select id="boardContent" resultType="kr.bit.entity.Board">
+		select * from board_tbl where idx=#{idx}
+	</select>
+	
+	<select id="loadReply" resultType="kr.bit.entity.Reply">
+		select * from reply_tbl 
+		where post_id=#{post_id}
+		order by ref asc, reStep asc, reLevel asc
+	</select>
+	
+	<select id="read" resultType="kr.bit.entity.Reply">
+		select * from reply_tbl where idx=#{idx}
+	</select>
+	
+	<insert id="reply" parameterType="kr.bit.entity.Reply">
+		<selectKey keyProperty="ref" resultType="Integer" order="BEFORE">
+			select IFNULL(max(ref)+1,0) as ref
+			from reply_tbl
+			where post_id=#{post_id}
+		</selectKey>
+		insert into reply_tbl (post_id, ref, reStep, reLevel, userId, content)
+		values(#{post_id}, #{ref}, 0, 0, #{userId}, #{content})
+	</insert>
+	
+	<update id="replyUpdate" parameterType="kr.bit.entity.Reply">
+		update reply_tbl set reStep=reStep+1
+		where ref=#{ref} and reStep > #{reStep}
+	</update>
+	
+	<insert id="replyAdd" parameterType="kr.bit.entity.Reply">
+		insert into reply_tbl (post_id, ref, reStep, reLevel, userId, content)
+		values(#{post_id}, #{ref}, #{reStep}, ${reLevel}, #{userId}, #{content})
+	</insert>
+	
+	<select id="totalCount" resultType="int" parameterType="kr.bit.entity.Criteria">
+    	select count(*) from board_tbl
+    	where categori=#{cate}
+    	<include refid="search"/>
+  	</select>
+	
+	<update id="boardUpdate" parameterType="kr.bit.entity.Board">
+		update board_tbl set title=#{title}, content=#{content} 
+		where idx=#{idx}
+	</update>
+	
+	<delete id="boardDel">
+		delete from board_tbl
+		where idx=#{idx}
+	</delete>
+	
+</mapper>

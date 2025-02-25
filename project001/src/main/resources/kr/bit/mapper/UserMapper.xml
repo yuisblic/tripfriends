@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kr.bit.mapper.UserMapper">
+
+	<select id="userCheck" resultType="kr.bit.entity.User">
+		select * from user_tbl where userId=#{userId}
+	</select>
+	
+	<insert id="join" parameterType="kr.bit.entity.User">
+		insert into user_tbl (userId, userPw, userName, userEmail) 
+		values(#{userId}, #{userPw}, #{userName}, #{userEmail})
+	</insert>
+	
+	<select id="login" parameterType="String" resultType="kr.bit.entity.User">
+		select * from user_tbl where userId=#{username}
+	</select>
+	
+	<update id="modify" parameterType="kr.bit.entity.User">
+		update user_tbl set userPw=#{userPw}, userEmail=#{userEmail}
+		where userId=#{userId}
+	</update>
+
+	<delete id="delete" parameterType="kr.bit.entity.User">
+		delete from user_tbl where userId=#{userId}
+	</delete>
+	
+	<select id="wishCheck" parameterType="kr.bit.entity.Wish" resultType="kr.bit.entity.Wish">
+		select * from wishList
+		where userId=#{userId} and idx=#{idx}
+	</select>
+	
+	<insert id="wish" parameterType="kr.bit.entity.Wish">
+		insert into wishList
+		values(#{userId}, #{idx}, #{writerId})
+	</insert>
+	
+	<delete id="wishDel" parameterType="kr.bit.entity.Wish">
+		delete from wishList 
+		where userId=#{userId} and idx=#{idx}
+	</delete>
+	
+	<select id="loadWish" parameterType="String" resultType="kr.bit.entity.Board">
+		select b.idx, b.categori, b.userId, b.title, b.content, b.indate, b.count, b.wish
+		from wishList wl
+		join board_tbl b on wl.idx=b.idx
+		where wl.userId = #{userId}
+	</select>
+	
+	<update id="userProfileUpdate" parameterType="kr.bit.entity.User">
+		update user_tbl set userProfile=#{userProfile} where userId=#{userId}
+	</update>
+	
+</mapper>
