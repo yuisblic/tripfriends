@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="kr.bit.mapper.BoardMapperTest" time="0.764" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="MS949"/>
+    <property name="java.class.path" value="C:\Users\yuisb\git\tripfriends\project001\target\test-classes;C:\Users\yuisb\git\tripfriends\project001\target\classes;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-context\5.0.7.RELEASE\spring-context-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-aop\5.0.7.RELEASE\spring-aop-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-beans\5.0.7.RELEASE\spring-beans-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-core\5.0.7.RELEASE\spring-core-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-jcl\5.0.7.RELEASE\spring-jcl-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-expression\5.0.7.RELEASE\spring-expression-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-webmvc\5.0.7.RELEASE\spring-webmvc-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-web\5.0.7.RELEASE\spring-web-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-test\5.0.7.RELEASE\spring-test-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\aspectj\aspectjrt\1.6.10\aspectjrt-1.6.10.jar;C:\eGovFrame-4.0.0\maven\repository\org\slf4j\slf4j-api\1.6.6\slf4j-api-1.6.6.jar;C:\eGovFrame-4.0.0\maven\repository\org\slf4j\jcl-over-slf4j\1.6.6\jcl-over-slf4j-1.6.6.jar;C:\eGovFrame-4.0.0\maven\repository\org\slf4j\slf4j-log4j12\1.6.6\slf4j-log4j12-1.6.6.jar;C:\eGovFrame-4.0.0\maven\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\eGovFrame-4.0.0\maven\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\eGovFrame-4.0.0\maven\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\eGovFrame-4.0.0\maven\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\eGovFrame-4.0.0\maven\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\eGovFrame-4.0.0\maven\repository\junit\junit\4.12\junit-4.12.jar;C:\eGovFrame-4.0.0\maven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\eGovFrame-4.0.0\maven\repository\mysql\mysql-connector-java\5.1.49\mysql-connector-java-5.1.49.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-jdbc\5.0.7.RELEASE\spring-jdbc-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-tx\5.0.7.RELEASE\spring-tx-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\com\zaxxer\HikariCP\3.3.1\HikariCP-3.3.1.jar;C:\eGovFrame-4.0.0\maven\repository\org\mybatis\mybatis\3.4.6\mybatis-3.4.6.jar;C:\eGovFrame-4.0.0\maven\repository\org\mybatis\mybatis-spring\1.3.2\mybatis-spring-1.3.2.jar;C:\eGovFrame-4.0.0\maven\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\eGovFrame-4.0.0\maven\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\eGovFrame-4.0.0\maven\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\eGovFrame-4.0.0\maven\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\eGovFrame-4.0.0\maven\repository\com\servlets\cos\09May2002\cos-09May2002.jar;C:\eGovFrame-4.0.0\maven\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\eGovFrame-4.0.0\maven\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-web\5.0.2.RELEASE\spring-security-web-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-core\5.0.2.RELEASE\spring-security-core-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-config\5.0.2.RELEASE\spring-security-config-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-taglibs\5.0.2.RELEASE\spring-security-taglibs-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-acl\5.0.2.RELEASE\spring-security-acl-5.0.2.RELEASE.jar;"/>
+    <property name="java.vm.vendor" value=""/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="KR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\yuisb\AppData\Local\Temp\surefire5572325044551906399\surefirebooter6539844208148402302.jar C:\Users\yuisb\AppData\Local\Temp\surefire5572325044551906399 2025-02-25T15-54-12_912-jvmRun1 surefire8930260193989030356tmp surefire_06455372266224349890tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\yuisb\git\tripfriends\project001\target\test-classes;C:\Users\yuisb\git\tripfriends\project001\target\classes;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-context\5.0.7.RELEASE\spring-context-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-aop\5.0.7.RELEASE\spring-aop-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-beans\5.0.7.RELEASE\spring-beans-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-core\5.0.7.RELEASE\spring-core-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-jcl\5.0.7.RELEASE\spring-jcl-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-expression\5.0.7.RELEASE\spring-expression-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-webmvc\5.0.7.RELEASE\spring-webmvc-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-web\5.0.7.RELEASE\spring-web-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-test\5.0.7.RELEASE\spring-test-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\aspectj\aspectjrt\1.6.10\aspectjrt-1.6.10.jar;C:\eGovFrame-4.0.0\maven\repository\org\slf4j\slf4j-api\1.6.6\slf4j-api-1.6.6.jar;C:\eGovFrame-4.0.0\maven\repository\org\slf4j\jcl-over-slf4j\1.6.6\jcl-over-slf4j-1.6.6.jar;C:\eGovFrame-4.0.0\maven\repository\org\slf4j\slf4j-log4j12\1.6.6\slf4j-log4j12-1.6.6.jar;C:\eGovFrame-4.0.0\maven\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\eGovFrame-4.0.0\maven\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\eGovFrame-4.0.0\maven\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\eGovFrame-4.0.0\maven\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\eGovFrame-4.0.0\maven\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\eGovFrame-4.0.0\maven\repository\junit\junit\4.12\junit-4.12.jar;C:\eGovFrame-4.0.0\maven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\eGovFrame-4.0.0\maven\repository\mysql\mysql-connector-java\5.1.49\mysql-connector-java-5.1.49.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-jdbc\5.0.7.RELEASE\spring-jdbc-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\spring-tx\5.0.7.RELEASE\spring-tx-5.0.7.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\com\zaxxer\HikariCP\3.3.1\HikariCP-3.3.1.jar;C:\eGovFrame-4.0.0\maven\repository\org\mybatis\mybatis\3.4.6\mybatis-3.4.6.jar;C:\eGovFrame-4.0.0\maven\repository\org\mybatis\mybatis-spring\1.3.2\mybatis-spring-1.3.2.jar;C:\eGovFrame-4.0.0\maven\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\eGovFrame-4.0.0\maven\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\eGovFrame-4.0.0\maven\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\eGovFrame-4.0.0\maven\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\eGovFrame-4.0.0\maven\repository\com\servlets\cos\09May2002\cos-09May2002.jar;C:\eGovFrame-4.0.0\maven\repository\commons-fileupload\commons-fileupload\1.4\commons-fileupload-1.4.jar;C:\eGovFrame-4.0.0\maven\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-web\5.0.2.RELEASE\spring-security-web-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-core\5.0.2.RELEASE\spring-security-core-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-config\5.0.2.RELEASE\spring-security-config-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-taglibs\5.0.2.RELEASE\spring-security-taglibs-5.0.2.RELEASE.jar;C:\eGovFrame-4.0.0\maven\repository\org\springframework\security\spring-security-acl\5.0.2.RELEASE\spring-security-acl-5.0.2.RELEASE.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\yuisb"/>
+    <property name="user.language" value="ko"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre"/>
+    <property name="basedir" value="C:\Users\yuisb\git\tripfriends\project001"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\yuisb\AppData\Local\Temp\surefire5572325044551906399\surefirebooter6539844208148402302.jar"/>
+    <property name="sun.boot.class.path" value="C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\resources.jar;C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\rt.jar;C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\sunrsasign.jar;C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\jsse.jar;C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\jce.jar;C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\charsets.jar;C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\jfr.jar;C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_242-b08"/>
+    <property name="user.name" value="yuisb"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="MS949"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\eGovFrame-4.0.0\maven\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\yuisb\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_242"/>
+    <property name="user.dir" value="C:\Users\yuisb\git\tripfriends\project001"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Bandizip\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="25.242-b08"/>
+    <property name="java.ext.dirs" value="C:\eGovFrame-4.0.0\bin\jdk8u242-b08\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testInsert" classname="kr.bit.mapper.BoardMapperTest" time="0">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardController': Unsatisfied dependency expressed through field 'context'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.context.WebApplicationContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.context.WebApplicationContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+</error>
+    <system-out><![CDATA[INFO : org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+INFO : org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@78c7f9b3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f8d7714, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1e6b9a95, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d6f623d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@aa21042, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@e93f3d5]
+INFO : org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4cee7fa0: startup date [Tue Feb 25 15:54:24 KST 2025]; root of context hierarchy
+INFO : org.springframework.beans.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'multipartResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=multipartResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [kr/bit/config/SecurityConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=servletConfig; factoryMethodName=multipartResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [kr/bit/config/ServletConfig.class]]
+INFO : org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO : com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+INFO : com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+WARN : org.springframework.context.support.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardController': Unsatisfied dependency expressed through field 'context'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.context.WebApplicationContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+INFO : com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+INFO : com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+ERROR: org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1e6b9a95] to prepare test instance [kr.bit.mapper.BoardMapperTest@7e8a46b7]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardController': Unsatisfied dependency expressed through field 'context'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.context.WebApplicationContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:580)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:107)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 27 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.context.WebApplicationContext' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 45 more
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="${cpath }/resources/css/signUp.css"/>
   <script src="${cpath }/resources/summernote/summernote-lite.min.js"></script>
   <script src="${cpath }/resources/summernote/summernote-ko-KR.min.js"></script>
   <link rel="stylesheet" href="${cpath }/resources/summernote/summernote-lite.min.css">
@@ -75,7 +76,9 @@
                 <div class="col-lg-3">
                     <jsp:include page="/WEB-INF/views/left.jsp"/>
                 </div>
+                
                 <div class="col-lg-9">
+                <p class="title">찜목록 </p>
                     <table id="content" class="table table-bordered table-hover">
                         <thead>
                             <tr>

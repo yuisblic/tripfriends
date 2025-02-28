@@ -137,7 +137,9 @@
 			</table>
 			<!-- 검색창 -->
 			<div align="center">
-			    <form class="form" action="${cpath}/board/cate?cate=${cate}&page=${cri.page}" method="post" style="text-align: center;">
+			    <form class="form" action="${cpath}/board/cate" method="get" style="text-align: center;">
+			        <input type="hidden" name="cate" value="${cate}">
+        			<input type="hidden" name="page" value="${pageMaker.cri.page}">
 			        <div style="display: inline-block; margin-right: 10px;">
 			            <select name="type" class="form-control">
 			                <option value="writer" ${pageMaker.cri.type == 'writer' ? 'selected' : ''}>이름</option>

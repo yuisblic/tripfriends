@@ -116,7 +116,7 @@
 					</tr>
 					<tr>
 						<td>작성자</td>
-						<td><input type="text" id="writer" name="writer" value="${u.userName }" readonly/></td>
+						<td><input type="text" id="writer" name="writer" value="${u.user.userName }" readonly/></td>
 					</tr>
 					<tr>
 						<td colspan="2" align="center">

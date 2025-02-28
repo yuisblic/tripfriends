@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: kr.bit.controller.BoardControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.982 s <<< FAILURE! - in kr.bit.controller.BoardControllerTest
+testList(kr.bit.controller.BoardControllerTest)  Time elapsed: 0.207 s  <<< ERROR!
+java.lang.NullPointerException
+	at kr.bit.controller.BoardControllerTest.testList(BoardControllerTest.java:44)
+

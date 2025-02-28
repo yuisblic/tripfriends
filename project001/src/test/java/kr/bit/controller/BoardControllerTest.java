@@ -12,14 +12,15 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import kr.bit.config.RootConfig;
+import kr.bit.config.ServletConfig;
 import kr.bit.service.BoardServiceTest;
 import lombok.extern.log4j.Log4j;
 
 @Log4j	
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/root-context.xml",
-					   "file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"})	//context:component-scan controller가 해당 위치에 있으므로 디렉토리가 두개 필요하여 추가해줌 
+@ContextConfiguration(classes = {RootConfig.class, ServletConfig.class})
 public class BoardControllerTest {
 	
 	@Autowired

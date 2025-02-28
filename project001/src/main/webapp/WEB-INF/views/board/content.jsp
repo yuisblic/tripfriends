@@ -96,7 +96,7 @@
 	  
 	  function replyView(data){
 		    var listHtml = "";
-		    listHtml+="<tr><td><span><img class='img-circle' src='${cpath}/images/profile/${u.user.userProfile}'></span>&nbsp ${u.user.userId }</td>";
+		    listHtml+="<tr><td>&nbsp ${u.user.userId }</td>";
 		    listHtml+="<td colspan='4'><textarea id='replyContent' name='replyContent' class='form-control'"
 		    listHtml+="placeholder='${empty u ? '로그인 후 이용하세요' : '댓글을 입력하세요'}'";
 		    listHtml+="${empty u ? ' readonly' : ''}></textarea>";

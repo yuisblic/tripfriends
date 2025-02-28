@@ -68,13 +68,15 @@ public class BoardController {
                                @RequestParam(value = "perPageNum", required = false, defaultValue = "10") int perPageNum,
                                Model model) {
 
-        Criteria cri = new Criteria();
+		System.out.println("ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇcate="+cate);
+		
+		Criteria cri = new Criteria();
         cri.setCate(cate);
         cri.setType(type);
         cri.setKeyword(keyword);
         cri.setPage(page);
         cri.setPerPageNum(perPageNum);
-
+        
         // 게시판 목록을 가져옵니다.
         List<Board> boardList = boardService.loadCate(cri);
 
@@ -86,6 +88,7 @@ public class BoardController {
         model.addAttribute("list", boardList);
         model.addAttribute("pageMaker", pageMaker);
         model.addAttribute("cate", cate);  // 현재 카테고리
+        System.out.println("ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁcate="+cate);
 
         return "board/list";  // JSP 뷰 이름
     }

@@ -86,7 +86,12 @@
 		<form class="form" action="${cpath}/user/profileUpdate?${_csrf.parameterName}=${_csrf.token}" method="post" enctype="multipart/form-data">
 		    <p class="title">프로필사진수정</p>
 		    <div class="profile-image">
-		        <img id="imagePreview" src="${cpath}/resources/images/upload/${u.user.userProfile}">  
+		    	<c:if test="${empty u.user.userProfile }">
+		        <img id="imagePreview" src="${cpath}/resources/images/profile/userImage.png">  
+		    	</c:if>
+		    	<c:if test="${!empty u.user.userProfile }">
+		        <img id="imagePreview" src="${cpath}/resources/images/upload/${u.user.userProfile}">
+		        </c:if>  
 		    </div><br/>
 		    <input type="file" name="userProfile" class="file-input" id="file-input" accept="image/*">
 		    <button class="submit" type="submit">사진변경</button>

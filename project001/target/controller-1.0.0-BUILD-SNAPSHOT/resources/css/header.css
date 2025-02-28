@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* 지도 설정 */
+.map {
+    width: 100%; 
+    height: 25vh; 
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* 세계 지도 이미지 */
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 비행기 설정 */
+.plane {
+    position: absolute;
+    width: 80px; /* 비행기 크기 */
+    height: 40px;
+    background-image: url('https://pngimg.com/uploads/plane/plane_PNG5238.png'); /* 비행기 이미지 */
+    background-size: cover;
+    animation: fly 7s linear infinite; /* 비행기 비행 애니메이션 */
+}
+
+@keyframes fly {
+    0% {
+        left: -10%;
+        top: 50%; 
+    }
+    50% {
+        left: 50%;
+        top: 20%;
+        transform: rotate(15deg);
+    }
+    100% {
+        left: 110%;
+        top: 20%;
+    }
+}
+	.navbar-right{
+		margin-right: 20px;
+	}
+	
+/* 여행동행 텍스트 중앙 배치 및 스타일링 */
+.map > div {
+    position: absolute;
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+    font-size: 36px; /* 글자 크기 */
+    font-family: 'Poppins', sans-serif; /* 동글동글한 귀여운 서체 */
+    font-weight: bold; /* 글자 굵기 */
+    color: white; /* 글자 색상 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 그림자 효과로 가독성 향상 */
+    letter-spacing: 2px; /* 글자 간격을 조금 넓혀서 보기 좋게 */
+}
+
+/* 구글 폰트 적용 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
